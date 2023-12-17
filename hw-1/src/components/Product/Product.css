@@ -1,0 +1,20 @@
+.product-body{
+    background-color: #2d2c2c;
+    padding: 10px;
+    color: white;
+}
+.card{
+    background-color: #373535;
+    border-radius: 5px;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+}
+.text-price{
+    font-size: 11px;
+    color: #a89b9b;
+}
+.text-desc{
+    font-size: 13px;
+    color: #696262;
+}
