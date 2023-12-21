@@ -1,0 +1,52 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Центрирование изображения */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.mini{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniImg{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+}
