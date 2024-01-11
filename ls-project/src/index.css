@@ -1,0 +1,13 @@
+@import 'macro-css';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
