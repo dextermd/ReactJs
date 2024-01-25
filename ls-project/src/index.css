@@ -1,4 +1,7 @@
 @import 'macro-css';
+html {
+  overflow: hidden;
+}
 
 body {
   margin: 0;
@@ -7,6 +10,7 @@ body {
   background: black;
   color: white;
 }
+
 .container {
   max-width: 1400px;
   margin: auto;
