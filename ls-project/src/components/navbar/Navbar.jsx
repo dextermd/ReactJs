@@ -7,7 +7,7 @@ import Logo from '../../assets/img/logo.png'
 import SpiderMan from '../../assets/icons/spider2.svg'
 import { CiShoppingCart as CartIcon } from "react-icons/ci";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div className="container">
       <nav className='d-flex justify-between align-center pt-40'>
@@ -33,3 +33,5 @@ export const Navbar = () => {
     </div>
   )
 }
+
+export default Navbar;

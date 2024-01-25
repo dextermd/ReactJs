@@ -5,11 +5,13 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.scss'
 
 import { Home } from './pages/home/Home'
+import Navbar from './components/navbar/Navbar'
 import Shop from './pages/shop/Shop'
 
-function App() {
+const  App = () => {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={ <Home /> } /> 
         <Route path="/shop" element={ <Shop /> } />
