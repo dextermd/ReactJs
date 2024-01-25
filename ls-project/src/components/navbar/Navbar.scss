@@ -10,6 +10,7 @@ nav{
         font-size: 20px;
         letter-spacing: 2px;
         transition: all .3s ease-in;
+        text-decoration: none;
         &:hover {
             border-bottom: 2px solid red;
         }
@@ -20,7 +21,6 @@ nav{
 
    a{ 
         color: white;
-        
         .spiderman_icon {
             height: 26px;
             width: 26px;

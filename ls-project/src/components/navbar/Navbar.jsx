@@ -10,7 +10,7 @@ import { CiShoppingCart as CartIcon } from "react-icons/ci";
 export const Navbar = () => {
   return (
     <div className="container">
-      <nav className='d-flex justify-between align-center p-40'>
+      <nav className='d-flex justify-between align-center pt-40'>
         <div>
           <a href="#"><img src={Logo} alt="logo" /></a>
         </div>
@@ -20,12 +20,12 @@ export const Navbar = () => {
           <a className='nav_link' href="">News</a>
           <a className='nav_link' href="">Parteners</a>
         </div>
-        <div className="d-flex justify-between align-center">
+        <div className="d-flex justify-between align-center links">
           <a>
-              <CartIcon size={26}/>
+              <CartIcon size={32}/>
               <span className="ml-15">00.00 USD</span>
           </a>
-          <a className="ml-10">
+          <a>
               <img className='spiderman_icon' src={SpiderMan} alt="spiderman icon" />
           </a>
         </div>
