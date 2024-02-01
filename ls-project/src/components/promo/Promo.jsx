@@ -8,7 +8,7 @@ export const Promo = () => {
   return (
     <div className='promo_comics d-flex flex-column align-center'>
         <Link to={"/shop"}>
-          <button>Buy</button>
+          <button className='but'>Buy</button>
         </Link>
     </div>      
   )

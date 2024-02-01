@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Venom By al ewing & ram v vol. 3",
+        "price": 33,
+        "imgUrl": "https://m.media-amazon.com/images/I/91vdxOfr8LL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+        "id": 2,
+        "name": "The Amazing Spider-Man: 1962–1964 (1)",
+        "price": 12,
+        "imgUrl": "https://m.media-amazon.com/images/I/913M7zWTzaL._SL1500_.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Superhero Comics (Bloomsbury Comics Studies)",
+        "price": 15,
+        "imgUrl": "https://m.media-amazon.com/images/I/91eBIiXeIPL._SL1500_.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Trial of the Amazons #1 Preview: Amazon Culture Wars",
+        "price": 27,
+        "imgUrl": "https://m.media-amazon.com/images/I/8125YqX-awL._SL1500_.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Компендиум «Непобедимый», том 1",
+        "price": 31,
+        "imgUrl": "https://m.media-amazon.com/images/I/8125YqX-awL._SL1500_.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Flashpoint",
+        "price": 11,
+        "imgUrl": "https://m.media-amazon.com/images/I/91dXNvO2fML._SL1500_.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Deadpool",
+        "price": 26,
+        "imgUrl": "https://m.media-amazon.com/images/I/91SG9acN4OL._SL1500_.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Men In Black - Far Cry #1",
+        "price": 9,
+        "imgUrl": "https://m.media-amazon.com/images/I/81d293-DxIL._SL1500_.jpg"
+    }
+]

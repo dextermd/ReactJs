@@ -1,0 +1,29 @@
+.card_container{
+    gap: 40px;
+    flex-wrap: wrap;
+    .card {
+        max-width: 230px;
+        img{
+            width: 100%;
+        }
+        h5{
+            font-size: 18px;
+        }
+        span{
+            font-size: 23px;
+        }
+        b{
+            font-size: 18px;
+        }
+        .bloc_price{
+            gap: 10px;
+        }
+        .btn{
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                transform: translateY(-5px);
+            }
+            
+        }
+    }
+}

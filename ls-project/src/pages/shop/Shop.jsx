@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SearchBlock from '../../components/search_block/SearchBlock';
+import ShopCard from '../../components/shop_card/ShopCard';
 
 const Shop = () => {
   return (
@@ -10,6 +11,7 @@ const Shop = () => {
                 <h1>All You Need</h1>
                 <SearchBlock/>
             </div>
+            <ShopCard/>
         </div>
     </div>
 

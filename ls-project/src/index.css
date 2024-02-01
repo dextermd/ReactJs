@@ -1,6 +1,6 @@
 @import 'macro-css';
 html {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 body {
