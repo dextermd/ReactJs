@@ -1,7 +1,4 @@
 @import 'macro-css';
-html {
-  /* overflow: hidden; */
-}
 
 body {
   margin: 0;
@@ -9,9 +6,15 @@ body {
   box-sizing: border-box;
   background: black;
   color: white;
+  text-decoration: none;
+  
 }
 
 .container {
   max-width: 1400px;
   margin: auto;
+}
+
+html {
+  /* overflow: hidden; */
 }

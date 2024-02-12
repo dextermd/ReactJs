@@ -1,30 +1,30 @@
-nav{
-    height: 100px;
+nav {
+  a {
+    text-decoration: none;
+    color: white;
+  }
 
-    div {
-        img{
-            height: 140px;
-        }
+  div {
+    img {
+      height: 140px;
     }
-    .nav_link {
-        font-size: 20px;
-        letter-spacing: 2px;
-        transition: all .3s ease-in;
-        text-decoration: none;
-        &:hover {
-            border-bottom: 2px solid red;
-        }
-    }
-    .links{
-        gap: 40px;
-    }
+  }
 
-   a{ 
-        color: white;
-        .spiderman_icon {
-            height: 26px;
-            width: 26px;
-            cursor: pointer;
-        }
+  .nav__link {
+    font-size: 25px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      border-bottom: 2px solid red;
     }
+  }
+  .links {
+    gap: 40px;
+  }
+
+  .spiderman__icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
 }
