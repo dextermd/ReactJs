@@ -3,12 +3,10 @@ import React from 'react'
 // icons
 import { IoCloseSharp } from "react-icons/io5";
 import Arrow from '../../assets/icons/arrow.svg';
-// img
-import Gwen from '../../assets/img/gwen.jpg'
 // scss
 import './Drawer.scss'
 
-const Drawer = ({ onCloseCart, cartItems }) => {
+const Drawer = ({ onCloseCart, cartItems, onRemoveItem }) => {
     return (
         <div className="clear">
             <div className="overlay">
@@ -26,8 +24,7 @@ const Drawer = ({ onCloseCart, cartItems }) => {
                                             <p className='mb-5'>{item.title}</p>
                                             <b>{item.price} $</b>
                                         </div>
-                                        <IoCloseSharp className='removeItem' size={35} />
-
+                                        <IoCloseSharp className='removeItem' size={35} onClick={() => onRemoveItem(item.id)} />
                                     </div>
                                 );
                             })
