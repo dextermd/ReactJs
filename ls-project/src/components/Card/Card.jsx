@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
 import Add from '../../assets/icons/add.svg'
 import Added from '../../assets/icons/added.svg'
 import './Card.scss';
+// context
+import AppContext from '../../Pages/context'
 
-const Card = ({ title, price, imgUrl, cartItems, onAddToCart }) => {
+const Card = ({ title, price, imgUrl, onAddToCart }) => {
 
+    const {cartItems} = useContext(AppContext)
     const [isAdded, setIsAdded] = useState(false);
 
     function onClickPlus(){

@@ -1,22 +1,15 @@
 // libs
-import React, { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 // components
 import Card from '../Components/Card/Card'
 // icons
 import { FaMagnifyingGlass } from "react-icons/fa6";
+// context
+import AppContext from '../../src/Pages/context'
 
-const Shop = ({ items, onAddToCart, searchValue,cartItems, onChangeSearchInput }) => {
+const Shop = ({}) => {
 
-
-
-    // useEffect -> хук который отлавливает любые действия в компоненте и исполняет некий эффект.
-    // эффект -> arrow function который исполнится 
-    // [] ->  список зависимостей в который если передать состояние,useEffect будет следить за их изминениями
-    // но если список указать без элементов,мы получаем гарантию что эффект произойдет при ТОЛЬКО первом рендере компонентпа 
-
-    // useEffect(()=>{
-    //     console.log("SALUT");
-    // },[])
+    const {items, onAddToCart, searchValue,cartItems, onChangeSearchInput} = useContext(AppContext)
 
     return (
         <div>

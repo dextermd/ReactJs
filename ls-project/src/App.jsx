@@ -9,6 +9,8 @@ import { Home } from './Pages/Home';
 import Shop from './Pages/Shop';
 import Navbar from './Components/Navbar/Navbar';
 import Drawer from './Components/Drawer/Drawer';
+// context
+import AppContext from './Pages/context';
 
 const App = () => {
 
@@ -31,6 +33,7 @@ const App = () => {
   const onAddToCart = (obj) => {
     axios.post('https://65bdf92fdcfcce42a6f1a616.mockapi.io/comics/cart', obj);
     setCartItems((prev) => [...prev, obj]);
+    console.log(AppContext)
   }
 
 
@@ -40,28 +43,33 @@ const App = () => {
 
 
   return (
-    <Router>
-      {cartOpened ? <Drawer
-        onRemoveItem={onRemoveItem}
-        cartItems={cartItems}
-        onCloseCart={() => setCartOpened(false)}
-      /> : null}
-      <Navbar
-        onClickCart={() => setCartOpened(true)}
-      />
-      <Routes >
-        <Route path="/" element={<Home />} />
-        <Route path="/shop"
-          element={<Shop
-            items={items}
-            onAddToCart={onAddToCart}
-            searchValue={searchValue}
-            onChangeSearchInput={onChangeSearchInput}
-            cartItems={cartItems} />}
+    <AppContext.Provider value={
+      {
+        items,
+        cartItems,
+        searchValue,
+        cartOpened,
+        setCartOpened,
+        onRemoveItem,
+        onAddToCart,
+        onChangeSearchInput,
+      }
+    }>
+      <Router>
+        {cartOpened ? <Drawer
+          //onRemoveItem={onRemoveItem}
+          //cartItems={cartItems}
+          onCloseCart={() => setCartOpened(false)}
+        /> : null}
+        <Navbar
+          onClickCart={() => setCartOpened(true)}
         />
-      </Routes>
-    </Router>
-
+        <Routes >
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop/>} />
+        </Routes>
+      </Router>
+    </AppContext.Provider>
   )
 }
 

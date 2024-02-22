@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 // img/icons
 import Logo from '../../../src/assets/img/logo.png';
 import SpiderMan from '../../../src/assets/icons/spiderman.svg';
@@ -11,7 +12,7 @@ const Navbar = ({onClickCart}) => {
         <div className="container">
             <nav className='d-flex justify-between align-center pt-40'>
                 <div>
-                    <a href="#"><img src={Logo} alt="logo" /></a>
+                    <Link to={'/'}><img src={Logo} alt="logo" /></Link>
                 </div>
                 <div className="links d-flex justify-between align-center ">
                     <a className='nav__link' href="#">About</a>
